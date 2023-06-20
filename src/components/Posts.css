@@ -1,0 +1,89 @@
+.menu{
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+}
+.border{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: 3px thin black;
+    padding-top: 1vw;
+    background-color:rgba(227, 224, 219, 0.939);
+    height: 26vw;
+}
+.postofprod{
+    display: flex;
+    margin-left: 1vw;
+    overflow-x: scroll;
+}
+.posts{
+    margin-top: 1vw;
+    padding-top: 2vw;
+}
+.post{
+    background-color: white;
+    border: 2px thin rgb(151, 43, 43);
+    width: 23vw;
+    border-radius: 2%;
+    height: 21vw;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+.product{
+    margin-left: 2vw;
+    margin-top: 2vw;
+    margin-right: 2vw;
+    height: 10vw; 
+    width: 19vw;  
+}
+.price{
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.desc{
+    margin-top: 1.4vw;
+    margin-left: 1.5vw;
+}
+.description{
+    font-size: 1.2vw;
+}
+.description1{
+    font-size: 1.2vw;
+}
+.description2{
+    margin-left: 50%;
+    font-size: 1.2vw;
+}
+.freshrecommendations{
+margin-left: 2vw;
+margin-top: 2vw;
+padding-bottom: 2vw;
+}
+.freshborder{
+    margin-top: 2vw;
+    border: 1px solid black;
+    border-radius: 1%;
+    width: 20vw;
+    height: 22vw;
+    margin-left: 1vw;
+}
+.bike{
+    width: 19vw;
+    margin-top: 2vw;
+}
+.freshhead{
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+.freshpara{
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+.freshpara2{
+    margin-left: 1vw;
+    font-size: 1.2vw; 
+}
+.footerpara{
+    margin-left: 70%;
+    margin-top: 0.3vw;
+}

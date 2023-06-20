@@ -1,0 +1,22 @@
+.banner{
+    display: flex;
+    margin-left: 5vw;
+    padding-top: 1vw;
+}
+.categories{
+    margin-right: 5vw;
+}
+.selectcategories{
+    
+    height: 2vw;
+    width: 10vw;
+    cursor: pointer;
+}
+span{
+    margin-right: 4vw;
+    cursor: pointer;
+}
+.bannerimage{
+    margin-top: .5vw;
+width: 100%;
+}

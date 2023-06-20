@@ -1,0 +1,45 @@
+.footertop{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(236, 233, 233) ;
+    padding-bottom: 1vw;
+}
+.footerleft{
+    margin-left: 5vw;
+}
+.footerleft p{
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    margin-left: -2vw;
+    margin-top: 1vw;
+}
+.footermidd p{
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    margin-left: -2vw;
+    margin-top: 1vw;
+}
+.footerright p{
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    margin-left: -2vw;
+    margin-top: 1vw; 
+}
+.footerbot{
+    background-color: rgb(21, 108, 108);
+    display: flex;
+    justify-content: space-between;
+    height: 3vw;
+}
+.footerbot p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    color: aliceblue;
+}
+.footertop li{
+    margin-top: .5vw;
+}
+.footerright{
+    margin-right: 1vw;
+}

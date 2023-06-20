@@ -1,0 +1,32 @@
+.create{
+    display: flex;
+}
+.img img{
+    margin-top: 6vw;
+    width: 50vw;
+    height: 40vw;
+}
+.createdetail{
+    margin-left: 20vw;
+    margin-top: 13vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 10vw;
+    width: 20vw;
+}
+.moredetail{
+    margin-left: 70vw;
+    margin-top: -20vw;
+    border: 2px solid black;
+    height: 10vw;
+    width: 20vw;
+    border-radius: 10px;
+}
+.createdetail p,.createdetail h1{
+margin-left: 1vw;
+margin-top: 1vw;
+}
+.moredetail p,.moredetail h1{
+    margin-left: 1vw;
+margin-top: 1vw;
+}

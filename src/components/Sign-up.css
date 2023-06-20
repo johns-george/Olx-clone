@@ -1,0 +1,42 @@
+.Signup{
+  margin: 10% 42%;
+  border: 5px groove ;
+  width:25vw;
+  height: 50vw;
+  border-radius: 10px;
+}
+.formlogo{
+    margin-top: 1vw;
+ margin-left:4vw
+}
+.form{
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+}
+.form input{
+    width: 90%;
+    height: 2vw;
+    margin-top: .5vw;
+    margin-bottom: 1vw;
+}
+.form input::placeholder{
+    font-size: larger;
+}
+.form button{
+    height: 3vw;
+    width: 10vw;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color:seagreen;
+    margin-top: .5vw;
+    margin-left: 6vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: aliceblue;
+    justify-content: space-around;
+}
+.form button:hover{
+    transform: scale(1.1);
+    color: rgb(17, 20, 20);
+}

@@ -1,0 +1,51 @@
+.nav{
+    padding-top: 1vw;
+    background-color:antiquewhite ;
+    position:sticky;
+    top:0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+#olxicon{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.location{
+width: 12vw;
+height: 2vw;
+cursor: pointer;
+}
+
+.searchbar{
+    width: 20vw;
+    height: 2vw;
+}
+.language{
+    width: 5vw;
+    height: 2vw;
+    cursor: pointer;
+}
+.loginbutt{
+width: 5vw;
+height: 2vw;
+cursor: pointer;
+}
+.sell{
+    width: 5vw;
+    margin-right: 2vw;
+    height: 2vw;
+    border-radius: 10%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(250, 30, 103, 0.986);
+}
+.search input{
+    padding-left: 5vw;
+   margin-right: 7vw;
+}
+.select{
+   padding-left: 2vw;
+}

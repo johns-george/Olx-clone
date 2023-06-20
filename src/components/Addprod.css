@@ -1,0 +1,51 @@
+.addprodborder{
+    margin: 15% 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25vw;
+    padding-bottom: 2vw;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.addprodborder h1{
+    font-size: 20px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.addprodborder input{
+margin-left: 10%;
+width: 18vw;
+height: 1.5vw;
+border:  outset;
+}
+#filetype{
+margin-top: 2vw;
+width: 25vw;
+height: 2vw;
+font-size: 18px;
+border: none;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.addprodborder button{
+    margin-top: 1.5vw;
+    margin-left: 6.5vw;
+    width: 10vw;
+    height: 2.5vw;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(34, 126, 95, 0.797);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.addprodborder button:hover{
+transform: scale(1.1);
+}
+.prodimg img{
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
