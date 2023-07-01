@@ -1,20 +1,19 @@
 import React from 'react'
-import './Footer.css'
 function Footer() {
   return (
-    <div className='footerdiv'>
-      <div className="footertop">
-        <div className="footerleft">
-            <p>POPULAR LOCATIONS</p>
+    <div className=''>
+      <div className="flex justify-between bg-gray-200">
+        <div className="p-6">
+            <p className='mb-4'>POPULAR LOCATIONS</p>
             <ul>
-                <li>kolkata</li>
+                <li>Kolkata</li>
                 <li>Mumbai</li>
                 <li>Chennai</li>
                 <li>Pune</li>
             </ul>
         </div>
-        <div className="footermidd">
-            <p>ABOUT US</p>
+        <div className="p-6">
+            <p className='mb-4'>ABOUT US</p>
             <ul>
                 <li>About Olx</li>
                 <li>Careers</li>
@@ -22,8 +21,8 @@ function Footer() {
                 <li>Olx People</li>
             </ul>
         </div>
-        <div className="footerright">
-            <p>OLX</p>
+        <div className="p-6">
+            <p className='mb-4'>OLX</p>
             <ul>
                 <li>Help</li>
                 <li>Sitemap</li>
@@ -31,7 +30,7 @@ function Footer() {
             </ul>
         </div>
       </div>
-      <div className="footerbot">
+      <div className="bg-green-700 flex justify-between px-4 py-3 text-white">
         <p>Other Countries Pakistan - South Africa - Indonesia</p>
         <p>Free Classifieds in India. © 2006-2021 OLX</p>
       </div>

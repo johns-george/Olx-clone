@@ -11,8 +11,6 @@
     height: 26vw;
 }
 .postofprod{
-    display: flex;
-    margin-left: 1vw;
     overflow-x: scroll;
 }
 .posts{

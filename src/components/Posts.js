@@ -1,8 +1,8 @@
 import React,{useState,useContext,useEffect} from 'react'
-import './Posts.css'
 import { Authcontext, Firebasecontext } from '../context/Context'
 import { Prodcontext } from '../context/Productcontext'
 import { useNavigate } from 'react-router'
+import './Posts.css'
 function Posts() {
   const navigate=useNavigate()
  const [post,setpost]=useState([])
@@ -22,42 +22,38 @@ const {postdetails,setpostdetails}=useContext(Prodcontext)
     })
   },[])
   return (
-    <div className='posts'>
-        <div className="border">
-          <div className='quickmenu'>
-            <h1 className='menu'>Quick Menu</h1>
+    <div className='mt-8 '>
+        <div className="bg-gray-400">
+          <div className='py-4 ml-12 text-3xl '>
+            <h1>Quick Menu</h1>
             </div>
-            <div className='postofprod'>
+            <div className='flex gap-8 pb-6 overflow-x-scroll px-6'>
             { post.map((products)=>{
             return(
-              <div className="post" onClick={()=>{
+              <div className="cursor-pointer bg-white min-w-fit" onClick={()=>{
                 setpostdetails(products)
                 console.log(postdetails)
                 navigate("/create")
               }}>
-        <img className='product' src={products.url} alt="" />
-        <div className="details">
-            <h2 className='price'>{products.price}</h2>
-            <div className="desc">
-            <p className='description'>{products.name}</p>
-            <p className='description1'>{products.category}</p> 
-            <p className='description2'>{products.createdAt}</p>
-            </div>
-        </div>
-     
+        
+        <img src={products.url} alt="productimage" className='xs:w-40  lg:w-60'/>
+            <h2 className='text-xl xs:pl-2 lg:pl-4'>{products.price}</h2>
+            <p className='text-lg xs:pl-3 lg:pl-6'>{products.name}</p>
+            <p className='text-lg xs:pl-3 lg:pl-6'>{products.category}</p> 
+            <p className='lg:pl-28 xs:pl-8'>{products.createdAt}</p>
       </div>
            )})
       }
       </div>
       </div>
-      <div className="freshrecommendations">
-        <h1 className="fresh">Fresh Recommendations</h1>
-        <div className="freshborder">
-          <img className='bike' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL04YQl15DZs3dwO6y8zy40BDPtkpTDeb2SQ&usqp=CAU" alt="" />
-        <h1 className='freshhead'>Rs 1,25,000</h1>
-        <p className='freshpara'>2018-6,000km</p>
-        <p className='freshpara2'>Two Wheeler</p>
-        <p className='footerpara'>10/05/2022</p>
+      <div className="p-6 text-3xl">
+        <h1 >Fresh Recommendations</h1>
+        <div className="border-2 w-80">
+          <img className='pt-6' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL04YQl15DZs3dwO6y8zy40BDPtkpTDeb2SQ&usqp=CAU" alt="" />
+        <h1 className='pl-4 text-3xl'>Rs 1,25,000</h1>
+        <p className='pl-4 text-lg'>2018-6,000km</p>
+        <p className='pl-4 text-lg'>Two Wheeler</p>
+        <p className='text-lg pl-52'>10/05/2022</p>
         </div>
       </div>
     </div>
