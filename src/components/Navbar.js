@@ -7,6 +7,9 @@ function Navbar() {
   const {firebase}=useContext(Firebasecontext)
   const history=useNavigate()
   function loginclick(){
+    if(user)
+    return null;
+    else
     history('/login')
   }
   const menuclick=()=>{
@@ -58,7 +61,7 @@ function Navbar() {
   <div className="w-8 h-0.5 bg-gray-600"></div>
 </div>
 </div>
-<div id="menudiv" className= 'lg:hidden pr-8 text-right bg-orange-200  pb-4 pt-4'>
+<div id="menudiv" className= 'hidden lg:hidden pr-8 text-right bg-orange-200  pb-4 pt-4'>
   <div className='mb-2'>
   <button onClick={loginclick} className=' bg-gray-200 w-24 text-lg'>{user?`Welcome ${user.displayName}`:"Login"}</button>
     </div>

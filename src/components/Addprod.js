@@ -1,4 +1,5 @@
 import React,{useState,useContext} from 'react'
+import './Spinner.css'
 import './Addprod.css'
 import { Authcontext } from '../context/Context'
 import { Firebasecontext } from '../context/Context'
@@ -12,7 +13,9 @@ function Addprod() {
   const [category,setCategory]=useState('')
   const [price,setPrice]=useState(0)
   const [image,setImage]=useState('')
+  const [loading,setloading]=useState(false)
   const handlesubmit=()=>{
+    setloading(true)
     firebase.storage().ref(`/image/${image}`).put(image).then(({ref})=>{
       ref.getDownloadURL().then((url)=>{
         firebase.firestore().collection('products').add({
@@ -23,8 +26,15 @@ function Addprod() {
           userid:user.uid,
           createdAt:date.toDateString()
         })
+        setloading(false)
         navigate('/')
       })
+      .catch((error)=>
+    {
+      setloading(false)
+     alert(error.message)
+    }
+    )
     })
     }
   return (
@@ -47,7 +57,10 @@ function Addprod() {
         <input onChange={(e)=>{
           setImage(e.target.files[0])
         }} type="file" id="filetype"/>
-        <button onClick={handlesubmit} type="submit">Submit</button>
+        <button onClick={handlesubmit} type="submit" disabled={loading}>Submit</button>
+        {loading?<div className="spinner-container">
+      <div className="loading-spinner"></div>
+    </div>:null}
        </div>
         </div> 
     </div>

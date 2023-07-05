@@ -30,7 +30,7 @@ function Footer() {
             </ul>
         </div>
       </div>
-      <div className="bg-green-700 flex justify-between px-4 py-3 text-white">
+      <div className="bg-green-900 flex justify-between px-4 py-3 text-white">
         <p>Other Countries Pakistan - South Africa - Indonesia</p>
         <p>Free Classifieds in India. © 2006-2021 OLX</p>
       </div>

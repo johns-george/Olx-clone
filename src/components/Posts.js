@@ -30,18 +30,18 @@ const {postdetails,setpostdetails}=useContext(Prodcontext)
             <div className='flex gap-8 pb-6 overflow-x-scroll px-6'>
             { post.map((products)=>{
             return(
-              <div className="cursor-pointer bg-white min-w-fit" onClick={()=>{
+              <div className="cursor-pointer bg-transparent border-2 rounded-lg min-w-fit" onClick={()=>{
                 setpostdetails(products)
                 console.log(postdetails)
                 navigate("/create")
               }}>
         
-        <img src={products.url} alt="productimage" className='xs:w-40  lg:w-60'/>
+        <img src={products.url} alt="productimage" className='xs:w-48 xs:h-40 lg:w-60 lg:h-48  p-2'/>
             <h2 className='text-xl xs:pl-2 lg:pl-4'>{products.price}</h2>
             <p className='text-lg xs:pl-3 lg:pl-6'>{products.name}</p>
             <p className='text-lg xs:pl-3 lg:pl-6'>{products.category}</p> 
-            <p className='lg:pl-28 xs:pl-8'>{products.createdAt}</p>
-      </div>
+           <div className='flex justify-end pr-2'> <p className=''>{products.createdAt}</p>
+      </div></div>
            )})
       }
       </div>
