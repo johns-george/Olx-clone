@@ -16,7 +16,7 @@ function Addprod() {
   const [loading,setloading]=useState(false)
   const handlesubmit=()=>{
     setloading(true)
-    firebase.storage().ref(`/image/${image}`).put(image).then(({ref})=>{
+    firebase.storage().ref(`/image/${URL.createObjectURL(image)}`).put(image).then(({ref})=>{
       ref.getDownloadURL().then((url)=>{
         firebase.firestore().collection('products').add({
           name,
@@ -54,6 +54,8 @@ function Addprod() {
         }} type="number" />
         <div className="mt-4">
         <img width="200px" height='200px' src={image?URL.createObjectURL(image):''} alt="post" />
+       
+       {console.log(image)}
         <input onChange={(e)=>{
           setImage(e.target.files[0])
         }} type="file" id="filetype"/></div>

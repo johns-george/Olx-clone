@@ -33,6 +33,7 @@ const {postdetails,setpostdetails}=useContext(Prodcontext)
               <div className="cursor-pointer bg-transparent border-2 rounded-lg min-w-fit" onClick={()=>{
                 setpostdetails(products)
                 console.log(postdetails)
+                console.log(products)
                 navigate("/create")
               }}>
         

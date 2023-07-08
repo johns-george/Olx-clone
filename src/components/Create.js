@@ -24,7 +24,7 @@ function Createapp() {
       <div className="border-2 w-60 h-32 pt-4">
         <h1 className="pl-4 text-2xl">{postdetails.price}</h1>
         <p className="pl-4 text-xl"> {postdetails.name}</p>
-        <p className="pl-4 text-xl">{postdetails.category}r</p>
+        <p className="pl-4 text-xl">{postdetails.category}</p>
       </div>
     
    {userdetails&& <div className="border-2 w-60 h-28 mt-10 pt-2">

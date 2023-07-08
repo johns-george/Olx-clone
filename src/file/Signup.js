@@ -1,12 +1,14 @@
 import React from 'react'
-import SignupPage from '../components/Sign-up'
+import SignupPage from '../components/SignupPage'
+import Navbar from '../components/Navbar'
 
-function Signin() {
+function Signup() {
   return (
-    <div id="signup">
+    <div>
+      <Navbar/>
       <SignupPage/>
     </div>
   )
 }
 
-export default Signin
+export default Signup

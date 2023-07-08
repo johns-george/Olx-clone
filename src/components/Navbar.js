@@ -19,10 +19,10 @@ function Navbar() {
     document.getElementById('menudiv').classList.add('hidden')
   }
   return (
-    <div>
-    <div className="flex justify-between sticky w-screen pt-4 bg-orange-200 top-0">
+    <div className='sticky top-0'>
+    <div className="flex justify-between w-screen pt-4 bg-orange-200">
     <div className=''>
-     <button className='-mt-2' onClick={()=>history('/')}> <Olxlogo  /></button>
+     <button className='' onClick={()=>history('/')}> <Olxlogo  /></button>
       </div>
       <div className="">
         <select className='xs:w-16 sm:w-16 md:w-40 lg:w-60 h-8 pl-2 text-xl'>
@@ -42,8 +42,8 @@ function Navbar() {
     <option >English</option>
   </select>
   </div>
-<div className="ml-4 xs:hidden lg:block text-lg bg-gray-200 mb-4 pt-1">
-<button onClick={loginclick} className='px-4'>{user?`Welcome ${user.displayName}`:"Login"}</button>
+<div className="ml-4 xs:hidden lg:block text-lg">
+<button onClick={loginclick} className='px-4 bg-gray-200 h-8'>{user?`Welcome ${user.displayName}`:"Login"}</button>
 </div>
 <div>
 {user&& <button className='xs:hidden lg:block ml-2 bg-gray-200 h-8 w-20 text-lg' onClick={()=>{
@@ -61,7 +61,7 @@ function Navbar() {
   <div className="w-8 h-0.5 bg-gray-600"></div>
 </div>
 </div>
-<div id="menudiv" className= 'hidden lg:hidden pr-8 text-right bg-orange-200  pb-4 pt-4'>
+<div id="menudiv" className= 'hidden lg:hidden pr-4 text-right bg-orange-200  pb-4 pt-4'>
   <div className='mb-2'>
   <button onClick={loginclick} className=' bg-gray-200 w-24 text-lg'>{user?`Welcome ${user.displayName}`:"Login"}</button>
     </div>
