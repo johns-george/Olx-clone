@@ -2,7 +2,6 @@
     margin: 15% 40%;
     border: 2px solid black;
     border-radius: 10px;
-    width: 25vw;
     padding-bottom: 2vw;
     padding-top: 2%;
     display: flex;
@@ -16,13 +15,11 @@
 }
 .addprodborder input{
 margin-left: 10%;
-width: 18vw;
 height: 1.5vw;
 border:  outset;
 }
 #filetype{
 margin-top: 2vw;
-width: 25vw;
 height: 2vw;
 font-size: 18px;
 border: none;

@@ -1,6 +1,6 @@
 import React,{useState,useContext} from 'react'
 import './Spinner.css'
-import './Addprod.css'
+//import './Addprod.css'
 import { Authcontext } from '../context/Context'
 import { Firebasecontext } from '../context/Context'
 import { useNavigate } from 'react-router'
@@ -38,30 +38,29 @@ function Addprod() {
     })
     }
   return (
-    <div className='addproduct'>
-     <div className="addprodborder">
-        <h1>Name</h1>
+    <div className='flex justify-center h-screen items-center'>
+     <div className="border-2 p-4 w-72 border-black rounded-lg">
+        <h1 className='text-2xl ml-2'>Name</h1>
         <input value={name} onChange={(e)=>{
           setName(e.target.value)
-        }} type="text" />
-        <h1>Category</h1>
-        <input value={category} onChange={(e)=>{
+        }} type="text" className='mt-1 text-lg px-2 border-2 rounded-lg' placeholder='Enter your name'/>
+        <h1 className='text-2xl mt-4'>Category</h1>
+        <input className='mt-1 text-lg px-2 border-2 rounded-lg' value={category} onChange={(e)=>{
           setCategory(e.target.value)
-        }} type="text" />
-        <h1>Price</h1>
-        <input value={price} onChange={(e)=>{
+        }} type="text" placeholder='Category'/>
+        <h1 className='text-2xl mt-4'>Price</h1>
+        <input className='mt-1 text-lg px-2 border-2 rounded-lg'value={price} onChange={(e)=>{
           setPrice(e.target.value)
         }} type="number" />
-        <div className="prodimg">
+        <div className="mt-4">
         <img width="200px" height='200px' src={image?URL.createObjectURL(image):''} alt="post" />
         <input onChange={(e)=>{
           setImage(e.target.files[0])
-        }} type="file" id="filetype"/>
-        <button onClick={handlesubmit} type="submit" disabled={loading}>Submit</button>
-        {loading?<div className="spinner-container">
+        }} type="file" id="filetype"/></div>
+        <div className='flex justify-center'><button onClick={handlesubmit} type="submit" disabled={loading} className='mt-4 bg-gray-400 px-8 py-1 cursor-pointer text-xl text-white'>Submit</button></div>
+        {loading?<div className="spinner-container flex justify-center mt-4">
       <div className="loading-spinner"></div>
     </div>:null}
-       </div>
         </div> 
     </div>
   )

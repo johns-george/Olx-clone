@@ -25,7 +25,7 @@ function Navbar() {
      <button className='-mt-2' onClick={()=>history('/')}> <Olxlogo  /></button>
       </div>
       <div className="">
-        <select className='xs:w-20 sm:w-20 md:w-40 lg:w-60 h-8 pl-2 text-xl'>
+        <select className='xs:w-16 sm:w-16 md:w-40 lg:w-60 h-8 pl-2 text-xl'>
           <option>India</option>
           <option>India</option>
           <option>India</option>
@@ -33,7 +33,7 @@ function Navbar() {
         </select>
       </div>
 <div className="">
-  <input type="text"className='xs:w-30 sm:w-60 md:w-60 lg:w-96 h-8' placeholder='   Find Car , Mobiles and More...'>
+  <input type="text"className='xs:w-30 sm:w-52 md:w-60 lg:w-96 h-8' placeholder='   Find Car , Mobiles and More...'>
   </input>
 </div>
 <div className="flex">
@@ -55,7 +55,7 @@ function Navbar() {
 <button onClick={()=>history('/addprod')} className='w-20'>Sell</button>
 </div>
 </div>
-<div onClick={menuclick} className="space-y-2 lg:hidden pr-8 pt-1 cursor-pointer">
+<div onClick={menuclick} className="space-y-2 lg:hidden pr-4 pt-1 cursor-pointer">
   <div className="w-8 h-0.5 bg-gray-600"></div>
   <div className="w-8 h-0.5 bg-gray-600"></div>
   <div className="w-8 h-0.5 bg-gray-600"></div>
